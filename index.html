@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <nav class="bg-gray-800 p-4 w-full">
+    <div class="container mx-auto flex justify-between items-center">
+     
+      <div class="flex items-center">
+        <img src="https://c8.alamy.com/comp/2E2PRJK/vector-logo-of-a-hostel-hotel-2E2PRJK.jpg" alt="Hostel Logo" class="h-12 w-12 object-cover">
+        <span class="text-white font-bold text-2xl ml-3">Hostel Harmony</span>
+      </div>
+      
+      <ul class="hidden md:flex space-x-8 text-white">
+        <li><a href="#" class="hover:text-gray-400">Home</a></li>
+        <li><a href="#" class="hover:text-gray-400">Features</a></li>
+        <li><a href="#" class="hover:text-gray-400">About Us</a></li>
+        <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+        <li><a href="#" class="hover:text-gray-400">Login</a></li>
+      </ul>
+    
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-white focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+  
+    <div id="mobile-menu" class="hidden md:hidden mt-2">
+      <ul class="bg-gray-800 p-4 space-y-2 text-white">
+        <li><a href="#" class="block">Home</a></li>
+        <li><a href="#" class="block">Features</a></li>
+        <li><a href="#" class="block">About Us</a></li>
+        <li><a href="#" class="block">Contact</a></li>
+        <li><a href="#" class="block">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="w-full  bg-slate-600">
+    <div class="h-screen w-full flex justify-center items-center text-white">
+      <div class="">
+        <h1 class="text-[45px] font-bold">Welcome to Hostel Harmony Management System
+        </h1>
+      </div>
+    </div>
+    <div class="h-screen grid-cols-2  flex bg-white">
+      <div class="w-[40%] h-full">
+        <div class="w-full h-full flex justify-center items-center">
+          <img class="h-[70%]" src="https://www.dituniversity.edu.in/images/dining-facilities-img2.jpg" alt="" srcset="">
+        </div>
+      </div>
+      <div class="w-[60%] h-full flex justify-center items-center">
+        <div class="w-[80%]">
+          <h1 class="text-3xl"><strong class="text-3xl uppercase">Efficient. Secure. Hassle-Free.</strong> <br>
+            At Hostel Harmony, we understand the challenges of managing hostel operations smoothly. Our Hostel Management System provides a seamless platform to manage room allocations, track payments, and ensure the comfort and security of all residents.
+            </h1>
+        </div>
+      </div>
+    </div>
+    <div class="h-screen w-full flex justify-center items-center">
+      <div class="w-[60%] flex justify-center items-center">
+        <div class="w-[80%]"><strong class="text-3xl uppercase">Features:</strong>
+        <h1 class="text-left text-2xl"><span class="font-bold">Easy Room Allocation</span>: Effortlessly assign rooms to students or guests with our intuitive interface. <br>
+          <span class="font-bold">Payment Management</span>: Keep track of all rent payments, dues, and payment histories in real-time. <br>
+          <span class="font-bold">Easy Room Allocation</span>: Simplified process for residents to report and track maintenance issues. <br>
+          <span class="font-bold">Resident Information</span>: Manage resident profiles, contact information, and stay history all in one place.
+          </h1></div>
+      </div>
+      <div class="w-[40%] h-full flex justify-center items-center">
+        <div class="w-full flex justify-center p-10"><img class="w-full object-cover h-[70%]" src="https://cdn.internationalstudent.com/images/stock-images/youth-hostel.jpg" alt="" srcset=""></div>
+      </div>
+    </div>
+    <div class="h-screen w-full flex justify-center items-center">
+      <div class="w-[80%]"><h1 class="text-2xl uppercase">Whether you're a hostel owner, manager, or resident, our system ensures you spend less time managing logistics and more time focusing on what matters.
+<br>
+        <strong class="text-3xl">Get Started Today!</strong> <br> Experience the future of hostel management with Hostel Harmony  . Login now or register to begin your journey toward a smarter, more efficient hostel experience.</h1></div>
+    </div>
+  </div>
+
+</body>
+<script>
+  window.onload = () => {
+    gsap.from("h1", { opacity: 0, y: -50, duration: 1 },);
+  };
+</script>
+
+</html>
